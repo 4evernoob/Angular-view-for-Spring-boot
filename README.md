@@ -1,6 +1,7 @@
 # Myapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
+This project uses Angular to create a simple CRUD using Spring REST services. 
 
 ## Development server
 
