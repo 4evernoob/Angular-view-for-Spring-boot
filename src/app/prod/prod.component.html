@@ -1,0 +1,28 @@
+<h2>Article List</h2>
+
+<div>
+  <button (click)="add()">
+    Add
+  </button>
+</div>
+
+<ul class="products">
+
+
+  <table class="blueTable" >
+  <tr>
+  <th>Edit</th>
+    <th>Id</th>
+    <th>Title</th> 
+    <th>Cat</th>
+	<th>Delete</th>
+	
+  </tr>
+    <tr *ngFor="let p of products; let i=index;" >
+     <td routerLink="/product-details/{{p.articleId}}">Edit</td> <td class="badge">{{p.articleId}}</td> <td>{{p.title}}</td><td>{{p.category}}</td>
+    
+    <td><button class="delete" title="delete product"
+      (click)="delete(p.articleId)">x</button></td>
+	  </tr>
+  </table>
+</ul>

@@ -1,0 +1,21 @@
+<div >
+     
+      <h2>Add Article</h2>
+      <div>
+        <label>title:
+          <input [(ngModel)]="artic.title" placeholder="Title">
+        </label>
+      </div>
+      <div>
+        <label>category:
+          <input [(ngModel)]="artic.category" placeholder="Category">
+        </label>
+		</div>
+		<div>
+		<button class="nuevo" title="agregar elemento"
+      (click)="addNew()">Add</button>
+	  <button class="nuevo" title="agregar elemento"
+      (click)="home()">Home</button>
+	  
+      </div>
+	  

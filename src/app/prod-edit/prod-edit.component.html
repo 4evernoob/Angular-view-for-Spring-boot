@@ -1,0 +1,16 @@
+<div>
+  <h2>Article Edit</h2>
+  <div>
+    <label>Id:
+      <input [(ngModel)]="product.articleId" placeholder="id"/>
+    </label><br>
+    <label>Title:
+      <input [(ngModel)]="product.title" placeholder="title"/>
+    </label><br>
+    <label>Category:
+      <input [(ngModel)]="product.category" placeholder="category"/>
+    </label><br>
+  </div>
+  <button (click)="updateProduct()">Update</button>
+  <button (click)="home()">Home</button>
+</div>
